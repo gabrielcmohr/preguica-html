@@ -1,0 +1,86 @@
+/* Definindo o layout com CSS Grid */
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr; /* Exemplo de layout de colunas */
+    grid-gap: 20px; /* Espaçamento entre as colunas */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilizando a barra de navegação */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Estilizando o cabeçalho */
+header {
+    grid-column: 1 / span 2; /* Ocupa duas colunas */
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando as seções de notícias */
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Outros estilos (footer, div, span, etc.) */
+
+.contato-section {
+    grid-column: 1 / span 2;
+}
+
+.contato-article {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contato-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contato-form input,
+.contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contato-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contato-form button:hover {
+    background-color: #555;
+}
